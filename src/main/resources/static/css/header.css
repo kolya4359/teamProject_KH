@@ -1,0 +1,44 @@
+@charset "UTF-8";
+
+.pageHeader {
+	width: 100vw;
+	display: grid;
+	grid-template-columns: 10% 70% 20%;
+	align-items: center;
+	position: fixed;
+	background-color: rgba(204, 204, 204, .1);
+	padding: 1%;
+	top: 0;
+	left: 0;
+	right: 0;
+}
+.pageHeader a {
+	color: gray;
+	margin-left: 40px;
+	font-size: 1.5rem;
+}
+.pageHeader a:hover {
+	color: black;
+	font-weight: bold;
+}
+.logo {
+    width:2%;
+    min-width: 70px;
+	float: left;
+}
+.login {
+	color: black;
+	font-size: 1.15rem;
+}
+
+input {
+	font-size: 20px;
+	width: 325px;
+	padding: 10px;
+	border: 0px;
+	outline: none;
+	float: left;
+}
+.item :hover{
+	opacity: 0.8;
+}

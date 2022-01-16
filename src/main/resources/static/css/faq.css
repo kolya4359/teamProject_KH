@@ -1,0 +1,226 @@
+@charset "utf-8";
+
+/* FAQ */
+
+.faqImg {
+    background-image: url(/images/FAQ.jpg);
+    background-size: 100% 100%;
+    width: 100%;
+    height: 35vh;
+    margin-top: 110px;
+    text-align: center;
+    padding-top: 4%; 
+}
+h1 {
+	color: white !important;
+}
+hr {
+	align-items: center;
+}
+.faqMain {
+	padding: 0 40px;
+}
+.faqBox {
+	padding: 20px;
+}
+
+.faqListHead {
+	border-bottom: 1px solid #ccc;
+}
+
+.faqListBody .item {
+	border-bottom: 1px solid #ccc;
+}
+
+.faqListHead, .faqListBody .item {
+	padding: 10px 0;
+}
+
+.faqListHead>div, .faqListBody .item>div {
+	display: inline-block;
+	text-align: center;
+}
+
+.faqListBody .item>div {
+	font-weight: 600;
+}
+
+.faqList .num {
+	margin-left: 6%;
+	width: 10%;
+}
+
+.faqList .tit {
+	width: 50%;
+}
+
+.faqListBody div.tit {
+	text-align: center;
+}
+
+.faqListBody div.tit a:hover {
+	text-decoration: underline;
+}
+
+.faqList .writer {
+	width: 14%;
+}
+
+.faqList .faqdate {
+	width: 15%;
+}
+.faqDate {
+	margin: 1% 0 0 5%;
+}
+
+.btnFaqWrite {
+	background-color: rgba(255, 153, 051, 0.8);
+	font-size: 1.25rem;
+	border-radius: 5px;
+	color: white;
+	width: 15%;
+	height: 50px;
+	margin: 2% 0 0 43%;
+}
+
+/* paging */
+.paging {
+	margin-top: 30px;
+	text-align: center;
+}
+
+.paging a {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+
+.paging a.bt {
+    width: 32px;
+    height: 32px;
+    background: rgba(255, 153, 051, 0.8); 
+    background-image: url(../images/page_bt.png);
+    background-repeat: no-repeat;
+    border-radius: 100px;
+    text-indent: -1000px;
+    overflow: hidden;
+}
+.paging a.bt:hover {
+    background-color: #999;
+}
+
+.paging a.prev {
+    background-position: 10px 12px;
+    margin-right: 5px;
+}
+
+.paging a.next {
+	background-position: -38px 12px;
+	margin-right: 5px;
+}
+
+/* 문의 작성 */
+
+.faqTitle {
+	background-color: white;
+	border: 1px solid gray;
+	border-radius: 5px;
+	width: 70%;
+	height: 40px;
+	padding: 10px;
+	margin: 40px 0 1% 15%; 
+}
+.faqText {
+	background-color: white;
+	border: 1px solid gray;
+	border-radius: 5px;
+	width: 70%;
+	height: auto;
+	padding: 20px;
+	margin: 0 0 20px 15%;
+}
+
+/* FAQ_datail.html */
+
+.faqDetailMain {
+	width: 1920px;
+	margin-top: 140px;
+}
+
+.faqDetailGrid {
+	display: grid;
+	grid-template-columns: 60% 30%;
+}
+
+.faqDetailFlex {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+
+.faqDetailFlex>div:first-child {
+	width: 90%;
+	flex: 5;
+}
+
+.faqDetailFlex>div:last-child {
+	width: 100%;
+	flex: 5;
+}
+.faqDetailWriter {
+	margin-right: 30px;
+}
+
+.faqDeep {
+	margin-left: 7%;
+	border-bottom: 1px solid gray;
+}
+.faqDeepTwo {
+	margin-left: 7%;
+}
+
+.faqDetailBtn {
+	border: 3px solid rgba(255, 153, 051, 0.8);
+	width: 100px;
+	height: 50px;
+	margin-left: 20px;
+	border-radius: 10px;
+	color: rgba(255, 153, 051, 0.8);
+	font-weight: bold;
+}
+.faqDetailBox {
+	margin: 1% 5% 0 5%;
+}
+.faqDetailGridBox {
+	display: grid;
+	grid-template-columns: 60% 25%;
+	margin-left: 40px;
+	padding-top: 10px;
+}
+.badge {
+	width: 100px;
+	border: 3px solid rgba(255, 153, 051, 0.8);
+	height: 50px;
+	border-radius: 5px;
+	color: rgba(255, 153, 051, 0.8);
+	text-align: center;
+	margin:0 0 2% 20%;
+	font-weight: bold;
+}
+.faqDetailBoxTwo {
+	margin: 1% 5% 0 5%;
+}
+
+.faqDetailAnsBox {
+	margin-left: 42%;
+}
+.faqDetailAnsBtn {
+	width: 150px;
+	height: 50px;
+	border-radius: 5px;
+	background-color: rgba(255, 153, 051, 0.8);
+	color: white;
+	text-align: center;
+	padding-top: 12px;
+	font-weight: bold;
+}

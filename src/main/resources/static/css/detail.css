@@ -1,0 +1,289 @@
+@charset "utf-8";
+
+/* 상세페이지 */
+
+.mainDetail {
+	margin-top: 150px;
+}
+.topDetail {
+	display: grid;
+	grid-template-columns: 60% 30%;
+}
+.bigTitleDetail {
+	margin-left: 10%;
+	border-bottom: 1px solid gray;
+	padding: 1%;
+}
+.reviewDetail {
+	margin: 2% 0 0 20%;
+}
+.reviewDetailBtn {
+	width: 200px;
+	height: 60px;
+	border-radius: 5px;
+	background-color: rgba(255, 153, 051, 0.8);
+	text-align: center;
+	font-size: 20px;
+	color: white;
+}
+.maindataDetail {
+	width: 90%;
+	margin: 2% 0 0 5%;
+	height: 45vh;
+}
+
+.contentsDetail {
+	display: grid;
+	grid-template-columns: 50% 50%;
+}
+
+.introDetail {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.kakaoMap {
+	width: 800px;
+	height: 700px;
+	margin: 50px;
+}
+
+.smallTitleDetail {
+	margin: 3% 0 0 5%;
+	border-bottom: 1px solid gray;
+	width: 780px;
+	font-size: 1.25rem;
+}
+
+.longIntroDetail {
+	border: 1px solid gray;
+	border-radius: 20px;
+	width: 800px;
+	margin: 3% 0 0 5%;
+	padding: 20px;
+	font-size: 1.25rem;
+}
+
+.mapCanvas {
+	border: 1px solid #ccc;
+	margin: 0 0 0px 0;
+}
+
+.lastDetail {
+	border: 1px solid gray;
+	border-radius: 20px;
+	width: 90%;
+	height: 500px;
+	margin: 3% 0 5% 5%;
+}
+
+.miniDetailBox {
+	margin: 2% 0 0 10%;
+}
+.miniTitle {
+	display: grid;
+	grid-template-columns: 12% 12% 61% 10%;
+	margin-left: 3%;
+}
+.dateWriter {
+	margin: 2% 0 0 3%;
+	border-bottom: 1px solid gray;
+	width: 200px;
+}
+.deteText {
+	margin: 2% 0 0 1%;
+	border-bottom: 1px solid gray;
+	width: 95%;
+}
+.deleteDetailBtn {
+	border: 3px solid rgba(255, 153, 051, 0.8);
+    width: 130px;
+    border-radius: 10px;
+    height: 40px;
+    color: rgba(255, 153, 051, 0.8);
+    font-weight: bold;
+    margin-top: 20px;
+}
+.tinyOneReview {
+	bottom:0;
+}
+.oneTextDetail {
+	margin: 1% 0 0 3%;
+	border-bottom: 1px solid gray;
+	width: 80%;
+}
+.btncommitDetail {
+	border: 3px solid rgba(255, 153, 051, 0.8);
+	width: 130px;
+	height: 40px;
+	border-radius: 10px;
+	color: rgba(255, 153, 051, 0.8);
+	font-weight: bold;
+	margin: 1% 0 0 2%;
+	padding:5px;
+}
+
+/* 카카오API */
+
+html, body {
+	/* height: 100%;  IE에서 지도위치가 브라우저 하단에 고정되는 현상 발생해서 삭제 (2013-05-16)  */
+	margin: 0;
+	padding: 0;
+}
+
+#map-canvas, #map_canvas {
+	width: 500px; /* 구글 지도 넓이 */
+	height: 500px; /* 구글 지도 높이 */
+	font-size: 12px;
+}
+
+/* 말풍선관련 css 시작 */
+.map_Heading { /* 말풍선 타이틀(회사명) css */
+	line-height: 30px;
+	font-size: 20px;
+	font-weight: bold;
+	color: #30C;
+}
+
+.map_Content { /* 말풍선 내용 css */
+	font-size: 12px;
+	color: #333;
+}
+
+/* 말풍선 회사홈페이지 링크 css */
+a:link.map_Content {
+	text-decoration: none;
+	color: #333;
+}
+
+a:active.map_Content {
+	text-decoration: none;
+	color: #333;
+}
+
+a:visited.map_Content {
+	text-decoration: none;
+	color: #333;
+}
+
+a:hover.map_Content {
+	text-decoration: none;
+	color: #A2002E;
+}
+/* 말풍선관련 css 끝 */
+@media print {
+	html, body {
+		height: auto;
+	}
+	#map_canvas {
+		height: 650px;
+	}
+}
+
+.wrapp {
+	position: absolute;
+	left: 0;
+	bottom: 40px;
+	width: 288px;
+	height: 132px;
+	margin-left: -144px;
+	text-align: left;
+	overflow: hidden;
+	font-size: 12px;
+	font-family: 'Malgun Gothic', dotum, '돋움', sans-serif;
+	line-height: 1.5;
+}
+
+.wrapp * {
+	padding: 0%;
+	margin: 0%;
+}
+
+.wrapp .info {
+	width: 286px;
+	height: 120px;
+	border-radius: 5px;
+	border-bottom: 2px solid #ccc;
+	border-right: 1px solid #ccc;
+	overflow: hidden;
+	background: #fff;
+}
+.wrapp .info:nth-child(1) {
+	padding: 0;
+	border: 0;
+	box-shadow: 0px 1px 2px #888;
+}
+
+.info .title {
+	padding: 0;
+	height: 30px;
+	background: #eee;
+	border-bottom: 1px solid #ddd;
+	font-size: 24px;
+}
+
+.info .close {
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	color: #888;
+	width: 17px;
+	height: 17px;
+	background:
+		url('https://t1.daumcdn.net/localimg/localimages/07/mapapidoc/overlay_close.png');
+}
+
+.info .close:hover {
+	cursor: pointer;
+}
+
+.info .body {
+	position: relative;
+	overflow: hidden;
+	margin-left: 10px;
+}
+
+.info .desc {
+	position: relative;
+	margin: 13px 0 0 90px;
+	height: 75px;
+}
+
+.desc .ellipsis {
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+.desc .jibun {
+	font-size: 11px;
+	color: #888;
+	margin-top: -2px;
+}
+
+.info .img {
+	position: absolute;
+	top: 6px;
+	left: 5px;
+	width: 73px;
+	height: 71px;
+	border: 1px solid #ddd;
+	color: #888;
+	overflow: hidden;
+}
+
+.info:after {
+	content: '';
+	position: absolute;
+	margin-left: -12px;
+	left: 50%;
+	bottom: 0;
+	width: 22px;
+	height: 12px;
+	background:
+		url('https://t1.daumcdn.net/localimg/localimages/07/mapapidoc/vertex_white.png')
+}
+
+.info .link {
+	color: #5085BB;
+}

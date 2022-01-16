@@ -1,0 +1,39 @@
+@charset "UTF-8";
+@import url(//fonts.googleapis.com/earlyaccess/jejumyeongjo.css);
+
+html {
+	font-size: 100%;
+}
+.jejumyeongjo * { 
+	font-family: 'Jeju Myeongjo', serif;
+}
+body {
+	line-height: 1.5;
+	color: #432;
+}
+a {
+	text-decoration: none;
+	color: #212529;
+}
+input[type=password] {
+	font-family: "Malgun Gothic", Gulim;
+}
+
+/* placeholder */
+
+input:-ms-input-placeholder {
+	color: rgb(155, 155, 155);
+}
+
+input::-webkit-input-placeholder {
+	color: rgb(155, 155, 155);
+}
+
+input::-moz-placeholder {
+	color: rgb(155, 155, 155);
+}
+
+::placeholder {
+	padding: 10px;
+	font-size: 15px;
+}

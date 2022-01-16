@@ -1,0 +1,184 @@
+@charset "utf-8";
+
+/* reviewIndex */
+
+h1, .reviewH3 {
+	color: white !important;
+}
+.reviewH3 {
+	margin-top: 40px;
+}
+.reviewImg {
+    background-image: url(/images/review.jpg);
+    background-size: 100% 100%;
+    width: 100%;
+    height: 35vh;
+    margin-top: 110px;
+    text-align: center;
+    padding-top: 4%; 
+}
+.reviewMain {
+	padding: 0 40px;
+}
+.reviewListHead {
+	border-bottom: 1px solid #ccc;
+}
+
+.reviewListBody .item {
+	border-bottom: 1px solid #ccc;
+}
+
+.reviewListHead, .reviewListBody .item {
+	padding-bottom: 10px;
+	font-size: 0;
+}
+
+.reviewListHead>div, .reviewListBody .item>div {
+	display: inline-block;
+	text-align: center;
+	font-size: 1rem;
+}
+
+.reviewListBody .item>div {
+	font-weight: 600;
+}
+
+.reviewList .num {
+	margin-left: 6%;
+	width: 10%;
+}
+
+.reviewList .tit {
+	width: 50%;
+}
+
+.reviewListBody div.tit {
+	text-align: center;
+}
+
+.reviewListBody div.tit a:hover {
+	text-decoration: underline;
+}
+
+.reviewList .writer {
+	width: 14%;
+}
+
+.reviewList .reviewDate {
+	width: 15%;
+}
+.reviewDate {
+	margin: 1% 0 0 5%;
+}
+.btnReviewWrite {
+	background-color: gray;
+	border-radius: 5px;
+	color: white;
+	width: 15%;
+	height: 50px;
+	margin: 2% 0 0 43%;
+}
+
+/* 리뷰작성 */
+
+.reviewTitle {
+	background-color: white;
+	border: 1px solid gray;
+	border-radius: 5px;
+	width: 70%;
+	height: 40px;
+	padding: 10px;
+	margin: 40px 0 1% 15%; 
+}
+.reviewText {
+	background-color: white;
+	border: 1px solid gray;
+	border-radius: 5px;
+	width: 70%;
+	height: auto;
+	padding: 20px;
+	margin: 0 0 20px 15%;
+}
+.btnReview {
+	width: 200px;
+	height: 60px;
+	border-radius: 5px;
+	background-color: gray;
+	text-align: center;
+	color: white;
+	font-size: 1.25rem;
+	margin-left: 43%;
+}
+
+/* 리뷰 상세 */
+
+.reviewDetailMain {
+	width: 1920px;
+	margin-top: 140px;
+}
+
+.reviewDetailGrid {
+	display: grid;
+	grid-template-columns: 60% 20%;
+}
+
+.reviewDetailFlex {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
+
+.reviewDetailFlex>div:first-child {
+	width: 90%;
+	flex: 5;
+}
+
+.reviewDetailFlex>div:last-child {
+	width: 50%;
+	flex: 5;
+}
+.reviewDetailTitle {
+	font-size: 1.25rem;
+	font-weight: bold;
+}
+
+.reviewDeep {
+	margin-left: 7%;
+	border-bottom: 1px solid gray;
+	width: 90%;
+}
+.reviewDeepTwo {
+	margin-left: 7%;
+}
+.reviewDetailWriter {
+	margin-right: 30px;
+}
+
+.reviewDetailBtn {
+	border: 3px solid gray;
+	width: 100px;
+	height: 50px;
+	margin-left: 20px;
+	border-radius: 10px;
+	color: gray;
+	font-weight: bold;
+}
+
+.reviewDetailText {
+	margin: 1% 5% 0 5%;
+}
+
+.reviewDetailGoList {
+	width: 20%;
+	height: 50px;
+	border-radius: 5px;
+	background-color: gray;
+	color: white;
+	text-align: center;
+	padding-top: 12px;
+	margin-left: 42%;
+	font-weight: bold;
+}
+
+/* 리뷰 수정 */
+
