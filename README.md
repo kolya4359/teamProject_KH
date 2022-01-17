@@ -28,6 +28,8 @@ SpringBoot 서버 개발보다 비교적 쉬웠던 내가 기획안을 만들기
 
 ![3](https://user-images.githubusercontent.com/79749251/149657425-528a9b96-8986-4fbf-a8a7-26d6a5280817.png)
 
+<hr />
+
 ## 제주 여행 공유 사이트 (JAVA_SpringBoot)
 
 ### 공통 기술
